@@ -38,6 +38,7 @@ class Leaderboard : Fragment() {
         val view = inflater.inflate(R.layout.fragment_leaderboard, container, false)
 
         val viewAdapter = MyAdapter(arrayOf("Flo", "Ly", "Jo"))
+       // www.example.com/user/Ly
 
         view.findViewById<RecyclerView>(R.id.leaderboard_list).run {
             // use this setting to improve performance if you know that changes

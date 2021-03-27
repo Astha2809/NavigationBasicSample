@@ -35,6 +35,9 @@
             </intent-filter>
             <!-- This is added to handle a deep link -->
             <nav-graph android:value="@navigation/navigation" />
+
+            <meta-data android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
         </activity>
     </application>
 

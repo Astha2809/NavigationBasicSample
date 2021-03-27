@@ -22,7 +22,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.navigation.findNavController
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_register.view.*
 
@@ -40,8 +40,11 @@ class Register : Fragment() {
 
         view.findViewById<Button>(R.id.signup_btn).setOnClickListener {
             //Navigation.findNavController(view).navigate(R.id.action_register_to_match)
-            val gameNumber=view.game_number.text.toString()
-            val action=RegisterDirections.actionRegisterToMatch(gameNumber)
+//            val gameNumber=view.game_number.text.toString()
+//            val action=RegisterDirections.actionRegisterToMatch()
+
+            val gameNumber=view.game_number.text.toString().toInt()
+           val action=RegisterDirections.actionRegisterToMatch().setNumber(gameNumber)
 
             findNavController().navigate(action)
         }

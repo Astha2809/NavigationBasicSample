@@ -48,4 +48,8 @@
     <string name="losses">Losses</string>
     <string name="losses_amount">03</string>
     <string name="congratulations">Congratulations!</string>
+    <string name="static_shortcut_label_short">Leaderboard</string>
+    <string name="static_shortcut_label_long">LeaderBoard</string>
+    <string name="static_shortcut_disabled_message">LeaderBoard</string>
+
 </resources>

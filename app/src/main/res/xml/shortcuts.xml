@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="LeaderBoardFragment"
+        android:enabled="true"
+
+        android:shortcutShortLabel="@string/static_shortcut_label_short"
+        android:shortcutLongLabel="@string/static_shortcut_label_long"
+        android:shortcutDisabledMessage=
+            "@string/static_shortcut_disabled_message"
+        android:icon="@drawable/avatar_10_raster">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="app://www.example.com/leaderboard" />
+    </shortcut>
+</shortcuts>

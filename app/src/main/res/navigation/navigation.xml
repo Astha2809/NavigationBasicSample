@@ -65,16 +65,19 @@
                 app:popExitAnim="@anim/slide_out_right"
                 app:enterAnim="@anim/slide_in_right"
                 app:exitAnim="@anim/slide_out_left"/>
+        <deepLink app:uri="app://www.example.com/leaderboard" />
     </fragment>
     <fragment
             android:id="@+id/match"
             android:name="com.example.android.navigationsample.Match"
             android:label="fragment_match"
             tools:layout="@layout/fragment_match">
+
         <argument
-            android:name="gamenumber"
+            android:name="number"
             app:argType="integer"
             android:defaultValue="1"/>
+
         <action
                 android:id="@+id/action_match_to_in_game"
                 app:destination="@id/in_game"
@@ -90,7 +93,7 @@
             tools:layout="@layout/fragment_user_profile">
         <argument android:name="userName"
                   android:defaultValue="name"/>
-        <deepLink app:uri="www.example.com/user/{userName}" />
+        <deepLink app:uri="app://www.example.com/user/{userName}" />
     </fragment>
     <fragment
             android:id="@+id/in_game"

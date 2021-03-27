@@ -45,7 +45,7 @@ class Match : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val receiveGameNumber=args.gamenumber
+        val receiveGameNumber=args.number
         view.game_title.text= receiveGameNumber.toString()
     }
 
